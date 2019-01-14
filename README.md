@@ -1,4 +1,4 @@
-# simple-resume
+# simple-landing-page
 [Live](https://jaeyeonling.github.io) 
 
 
