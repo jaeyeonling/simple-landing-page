@@ -19,7 +19,7 @@ import StyleEditor from '@/components/StyleEditor.vue'
   },
 })
 export default class App extends Vue {
-  private interval: number = 1
+  private interval: number = 3
   private currentStyle: string = ''
   private enableHtml: boolean = false
   private currentMarkdown: string = ''
