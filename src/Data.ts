@@ -56,7 +56,7 @@ const fullMarkdown: string = `
   #### [Email](mailto:jaeyeonling@gmail.com)
   #### [Github](https://github.com/jaeyeonling)
 
-  > https://github.com/jaeyeonling/simple-resume
+  > https://github.com/jaeyeonling/simple-landing-page
   `
 
 const fullStyle: string[] = [
@@ -196,6 +196,12 @@ const fullStyle: string[] = [
   }
 
   /********** 텍스트 에디터 끝 **********/
+
+  /** TODO
+   * fix style
+   * add resource
+   *
+   * /
 `]
 
 export default {
