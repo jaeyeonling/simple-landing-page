@@ -60,7 +60,7 @@ export default class App extends Vue {
         if (this.currentStyle.length < length) {
           const l = this.currentStyle.length - prefixLength
 
-          this.currentStyle += style.substring(l, l + 2) || ' '
+          this.currentStyle += style.substring(l, l + 1) || ' '
 
           if (style.substring(l - 1, l) === '\n' && this.$refs.styleEditor) {
             this.$nextTick(() => (this.$refs.styleEditor as StyleEditor).goBottom())

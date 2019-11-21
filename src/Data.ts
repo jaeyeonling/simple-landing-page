@@ -359,6 +359,8 @@ const fullStyle: string[] = [
     top: 0;
     -webkit-transition: none;
     transition: none;
+    -webkit-transform: rotateY(10deg) translateZ(-100px);
+    transform: rotateY(10deg) translateZ(-100px);
   }
 
   /* 텍스트 편집 설정 추가 */
@@ -379,8 +381,11 @@ const fullStyle: string[] = [
   `
   ,
   `
-  /** 
-   * 이력서 마크다운 적용
+  /**
+   * 텍스트 에디터
+   *
+   * Markdown 형식
+   * 간단한 오픈 소스 도구를 사용하여 HTML로 변환
    * /
    
   p, li {
