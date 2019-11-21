@@ -19,7 +19,7 @@ import StyleEditor from '@/components/StyleEditor.vue'
   },
 })
 export default class App extends Vue {
-  private interval: number = 3
+  private interval: number = 1
   private currentStyle: string = ''
   private enableHtml: boolean = false
   private currentMarkdown: string = ''
@@ -60,7 +60,7 @@ export default class App extends Vue {
         if (this.currentStyle.length < length) {
           const l = this.currentStyle.length - prefixLength
 
-          this.currentStyle += style.substring(l, l + 1) || ' '
+          this.currentStyle += style.substring(l, l + 2) || ' '
 
           if (style.substring(l - 1, l) === '\n' && this.$refs.styleEditor) {
             this.$nextTick(() => (this.$refs.styleEditor as StyleEditor).goBottom())
@@ -82,7 +82,7 @@ export default class App extends Vue {
 
       const showResume = () => {
         if (this.currentMarkdown.length < length) {
-          this.currentMarkdown = data.fullMarkdown.substring(0, this.currentMarkdown.length + 1)
+          this.currentMarkdown = data.fullMarkdown.substring(0, this.currentMarkdown.length + 5)
 
           const lastChar = this.currentMarkdown[this.currentMarkdown.length - 1]
           const prevChar = this.currentMarkdown[this.currentMarkdown.length - 2]
