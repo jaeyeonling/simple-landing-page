@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "marked": "^0.6.0",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.21.0",
     "register-service-worker": "^1.5.2",
     "vue": "^2.5.21",
     "vue-class-component": "^6.0.0",
